@@ -1,4 +1,4 @@
-# $Revision: 1.4 $
+# $Revision: 1.5 $
 Summary:	GNU GO
 Name:		gnugo
 Version:	2.6
@@ -41,6 +41,7 @@ gzip -9nf AUTHORS ChangeLog NEWS README THANKS TODO
 
 %post
 %fix_info_dir
+
 
 %clean
 rm -rf $RPM_BUILD_ROOT
