@@ -1,17 +1,12 @@
---- gnugo-2.6/doc/gnugo.texi~	Sun Feb 13 15:27:42 2000
-+++ gnugo-2.6/doc/gnugo.texi	Sun Jun 17 19:00:24 2001
-@@ -52,6 +52,14 @@
- translation approved by the Free Software Foundation.
- @end titlepage
+diff -u -r gnugo-3.2/doc/gnugo.texi gnugo-3.2+/doc/gnugo.texi
+--- gnugo-3.2/doc/gnugo.texi	Sat Mar 30 17:38:50 2002
++++ gnugo-3.2+/doc/gnugo.texi	Sat Feb  1 10:08:31 2003
+@@ -6,7 +6,7 @@
  
-+@format
-+@dircategory Miscellaneous:
-+@direntry
-+* gnugo: (gnugo).				The GNU program to play the
-+						game of Go
-+@end direntry
-+@end format
-+
- @node    Top, Introduction, (dir), (dir)
- @comment node-name, next,         previous, up
- @ifinfo
+ @dircategory GNU games
+ @direntry
+-* GNU go: (gnugo).          The GNU Go program
++* GNU go: (gnugo).                      The GNU Go program
+ @end direntry
+ 
+ @set EDITION 3.2
