@@ -28,7 +28,7 @@ the CGoban package and the X Window System.
 %patch -p1
 
 %build
-%configure 
+%configure2_13 
 %{__make}
 
 %install
