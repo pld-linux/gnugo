@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Games
 Source0:	ftp://ftp.gnu.org/gnu/gnugo/%{name}-%{version}.tar.gz
+# Source0-md5:	5fff329f97d947d81366f7d21a0ea1c8
 Patch0:		%{name}-info.patch
 URL:		http://www.gnu.org/software/gnugo/
 BuildRequires:	texinfo
