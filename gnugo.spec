@@ -1,4 +1,4 @@
-# $Revision: 1.2 $
+# $Revision: 1.3 $
 Summary:	GNU GO
 Name:		gnugo
 Version:	2.6
@@ -8,7 +8,9 @@ Group:		Applications/Games
 Group(de):	Applikationen/Spiele
 Group(pl):	Aplikacje/Gry
 Source0:	ftp://ftp.gnu.org/gnu/gnugo/%{name}-%{version}.tar.gz
+Patch0:		%{name}-info.patch
 URL:		http://www.gnu.org/software/gnugo/
+BuildRequires:	texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -24,6 +26,7 @@ the CGoban package and the X Window System.
 
 %prep
 %setup -q
+%patch -p1
 
 %build
 %configure 
@@ -34,6 +37,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
 
+gzip -9nf AUTHORS ChangeLog NEWS README THANKS TODO
+
 %post
 [ ! -x /usr/sbin/fix-info-dir ] || /usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
 
@@ -42,6 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc *.gz
 %attr(755,root,root) %{_bindir}/gnugo
 %{_infodir}/*
 %{_mandir}/man6/*
