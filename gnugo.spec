@@ -1,4 +1,4 @@
-# $Revision: 1.1 $
+# $Revision: 1.2 $
 Summary:	GNU GO
 Name:		gnugo
 Version:	2.6
@@ -8,20 +8,30 @@ Group:		Applications/Games
 Group(de):	Applikationen/Spiele
 Group(pl):	Aplikacje/Gry
 Source0:	ftp://ftp.gnu.org/gnu/gnugo/%{name}-%{version}.tar.gz
+URL:		http://www.gnu.org/software/gnugo/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+Go is a game of strategy between two players usually played on a 19x19
+grid called goban. GNU Go plays a game of Go against the user. It has
+many other features: it can play against itself or another program,
+analyse and score a recorded game. GNU Go is compliant with Go Modem
+Protocol, and load / save games in the Smart Go format.
 
-%description -l pl
+GNU Go default is a simple alpha-numeric board display, if you'd like
+to use a graphical interface with GNU Go, you'll also need to install
+the CGoban package and the X Window System.
 
 %prep
 %setup -q
+
 %build
 %configure 
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
 
 %post
