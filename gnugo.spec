@@ -30,15 +30,15 @@ analizowaæ i punktowaæ zapisan± grê. GNU Go jest kompatybilny z Go
 Modem Protocol, a zapisuje/odczytuje gry w formacie Smart Go.
 
 GNU Go domy¶lnie ma standardowo proste, alfanumeryczne wy¶wietlanie
-planszy. Je¶li chcesz graficzny interfejs do GNU Go, doinstaluj
-pakiet CGoban (wymagaj±cy X Window System).
+planszy. Je¶li chcesz graficzny interfejs do GNU Go, doinstaluj pakiet
+CGoban (wymagaj±cy X Window System).
 
 %prep
 %setup -q
 %patch -p1
 
 %build
-%configure2_13 
+%configure2_13
 %{__make}
 
 %install
