@@ -2,7 +2,7 @@ Summary:	GNU GO
 Summary(pl):	Wersja GNU gry w GO
 Name:		gnugo
 Version:	2.6
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Games
 Source0:	ftp://ftp.gnu.org/gnu/gnugo/%{name}-%{version}.tar.gz
@@ -61,5 +61,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz
 %attr(755,root,root) %{_bindir}/gnugo
-%{_infodir}/*
+%{_infodir}/gnugo.info*
 %{_mandir}/man6/*
