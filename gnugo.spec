@@ -1,4 +1,3 @@
-# $Revision: 1.6 $
 Summary:	GNU GO
 Name:		gnugo
 Version:	2.6
