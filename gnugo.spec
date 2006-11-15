@@ -8,8 +8,8 @@ Group:		Applications/Games
 Source0:	ftp://ftp.gnu.org/gnu/gnugo/%{name}-%{version}.tar.gz
 # Source0-md5:	53abc7427d89d81155c8bfc8e005c47f
 Patch0:		%{name}-info.patch
-Patch1:		%{name}-extern-static.patch
 URL:		http://www.gnu.org/software/gnugo/
+BuildRequires:	ncurses-devel
 BuildRequires:	texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,11 +37,10 @@ CGoban (wymagaj±cy X Window System).
 
 %prep
 %setup -q
-#%patch0 -p1
-#%patch1 -p1
+%patch0 -p1
 
 %build
-%configure2_13
+%configure
 %{__make}
 
 %install
