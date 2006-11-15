@@ -1,12 +1,14 @@
-diff -u -r gnugo-3.2/doc/gnugo.texi gnugo-3.2+/doc/gnugo.texi
---- gnugo-3.2/doc/gnugo.texi	Sat Mar 30 17:38:50 2002
-+++ gnugo-3.2+/doc/gnugo.texi	Sat Feb  1 10:08:31 2003
-@@ -6,7 +6,7 @@
+--- gnugo-3.6/doc/gnugo.texi.orig	2004-11-16 21:24:52.000000000 +0100
++++ gnugo-3.6/doc/gnugo.texi	2006-11-15 10:50:03.769505000 +0100
+@@ -4,9 +4,9 @@
+ @settitle GNU Go Documentation
+ @c %**end of header
  
- @dircategory GNU games
+-@dircategory GNU games
++@dircategory Games:
  @direntry
--* GNU go: (gnugo).          The GNU Go program
-+* GNU go: (gnugo).                      The GNU Go program
+-* GNU Go: (gnugo).          The GNU Go program
++* GNU Go: (gnugo).			The GNU Go program
  @end direntry
  
- @set EDITION 3.2
+ @set EDITION 3.6
