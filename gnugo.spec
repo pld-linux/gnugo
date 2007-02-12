@@ -1,5 +1,5 @@
 Summary:	GNU GO
-Summary(pl):	Wersja GNU gry w GO
+Summary(pl.UTF-8):   Wersja GNU gry w GO
 Name:		gnugo
 Version:	3.6
 Release:	0.1
@@ -24,16 +24,16 @@ GNU Go default is a simple alpha-numeric board display, if you'd like
 to use a graphical interface with GNU Go, you'll also need to install
 the CGoban package and the X Window System.
 
-%description -l pl
-Go to gra strategiczna dla dwóch graczy rozgrywana na planszy 19x19
-nazywanej goban. GNU Go gra przeciwko u¿ytkownikowi. Ma wiele
-mo¿liwo¶ci: mo¿e graæ przeciwko sobie samemu lub innemu programowi,
-analizowaæ i punktowaæ zapisan± grê. GNU Go jest kompatybilny z Go
+%description -l pl.UTF-8
+Go to gra strategiczna dla dwÃ³ch graczy rozgrywana na planszy 19x19
+nazywanej goban. GNU Go gra przeciwko uÅ¼ytkownikowi. Ma wiele
+moÅ¼liwoÅ›ci: moÅ¼e graÄ‡ przeciwko sobie samemu lub innemu programowi,
+analizowaÄ‡ i punktowaÄ‡ zapisanÄ… grÄ™. GNU Go jest kompatybilny z Go
 Modem Protocol, a zapisuje/odczytuje gry w formacie Smart Go.
 
-GNU Go domy¶lnie ma standardowo proste, alfanumeryczne wy¶wietlanie
-planszy. Je¶li chcesz graficzny interfejs do GNU Go, doinstaluj pakiet
-CGoban (wymagaj±cy X Window System).
+GNU Go domyÅ›lnie ma standardowo proste, alfanumeryczne wyÅ›wietlanie
+planszy. JeÅ›li chcesz graficzny interfejs do GNU Go, doinstaluj pakiet
+CGoban (wymagajÄ…cy X Window System).
 
 %prep
 %setup -q
