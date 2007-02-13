@@ -1,5 +1,5 @@
 Summary:	GNU GO
-Summary(pl.UTF-8):   Wersja GNU gry w GO
+Summary(pl.UTF-8):	Wersja GNU gry w GO
 Name:		gnugo
 Version:	3.6
 Release:	0.1
