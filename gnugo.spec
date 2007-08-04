@@ -1,12 +1,12 @@
 Summary:	GNU GO
 Summary(pl.UTF-8):	Wersja GNU gry w GO
 Name:		gnugo
-Version:	3.6
+Version:	3.7.10
 Release:	1
 License:	GPL
 Group:		Applications/Games
-Source0:	ftp://ftp.gnu.org/gnu/gnugo/%{name}-%{version}.tar.gz
-# Source0-md5:	53abc7427d89d81155c8bfc8e005c47f
+Source0:	ftp://sporadic.stanford.edu/pub/gnugo-3.7.10.tar.gz
+# Source0-md5:	a5d225cf4868edee0981b85447de5ad8
 Patch0:		%{name}-info.patch
 Patch1:		%{name}-tinfo.patch
 URL:		http://www.gnu.org/software/gnugo/
