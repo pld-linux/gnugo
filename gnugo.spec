@@ -5,7 +5,7 @@ Version:	3.7.10
 Release:	1
 License:	GPL
 Group:		Applications/Games
-Source0:	ftp://sporadic.stanford.edu/pub/gnugo-3.7.10.tar.gz
+Source0:	ftp://sporadic.stanford.edu/pub/%{name}-%{version}.tar.gz
 # Source0-md5:	a5d225cf4868edee0981b85447de5ad8
 Patch0:		%{name}-info.patch
 Patch1:		%{name}-tinfo.patch
@@ -50,7 +50,8 @@ CGoban (wymagający X Window System).
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
