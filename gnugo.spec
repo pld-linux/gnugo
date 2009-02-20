@@ -1,16 +1,17 @@
 Summary:	GNU GO
 Summary(pl.UTF-8):	Wersja GNU gry w GO
 Name:		gnugo
-Version:	3.7.10
+Version:	3.8
 Release:	1
-License:	GPL
+License:	GPL v3
 Group:		Applications/Games
-Source0:	ftp://sporadic.stanford.edu/pub/%{name}-%{version}.tar.gz
-# Source0-md5:	a5d225cf4868edee0981b85447de5ad8
+Source0:	ftp://ftp.gnu.org/gnu/gnugo/%{name}-%{version}.tar.gz
+# Source0-md5:	6db0a528df58876d2b0ef1659c374a9a
 Patch0:		%{name}-info.patch
 Patch1:		%{name}-tinfo.patch
 URL:		http://www.gnu.org/software/gnugo/
 BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	ncurses-devel
 BuildRequires:	texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -43,7 +44,10 @@ CGoban (wymagający X Window System).
 %patch1 -p1
 
 %build
+%{__aclocal}
 %{__autoconf}
+%{__autoheader}
+%{__automake}
 %configure
 %{__make}
 
