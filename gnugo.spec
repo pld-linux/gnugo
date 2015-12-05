@@ -2,7 +2,7 @@ Summary:	GNU GO
 Summary(pl.UTF-8):	Wersja GNU gry w GO
 Name:		gnugo
 Version:	3.8
-Release:	2
+Release:	3
 License:	GPL v3
 Group:		Applications/Games
 Source0:	ftp://ftp.gnu.org/gnu/gnugo/%{name}-%{version}.tar.gz
