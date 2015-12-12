@@ -12,3 +12,29 @@
  @end direntry
  
  @set EDITION 3.6
+Index: gnugo-3.8/doc/gnugo.texi
+===================================================================
+--- gnugo-3.8.orig/doc/gnugo.texi	2009-02-17 22:41:31.000000000 +0100
++++ gnugo-3.8/doc/gnugo.texi	2013-10-08 22:32:23.530377778 +0200
+@@ -26,7 +26,7 @@
+ 
+ @sp 1
+ @page
+-@title{GNU Go 3.8}
++@title GNU Go 3.8
+ @vskip 0pt plus 1filll
+ Copyright @copyright{} 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007,
+ 2008 and 2009 @uref{http://www.fsf.org,Free Software Foundation}, Inc.
+Index: gnugo-3.8/doc/montecarlo.texi
+===================================================================
+--- gnugo-3.8.orig/doc/montecarlo.texi	2009-02-17 22:41:31.000000000 +0100
++++ gnugo-3.8/doc/montecarlo.texi	2013-10-08 22:33:54.363875500 +0200
+@@ -245,7 +245,7 @@
+ pattern to take effect. If contradictory properties are combined, the
+ pattern will never match.
+ 
+-@subsection Final Remarks
++@section Final Remarks
+ 
+ @itemize
+ @item  Move values are unsigned 32-bit integers. To avoid overflow in
